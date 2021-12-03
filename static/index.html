@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            document.addEventListener("DOMContentLoaded", (e) => {
+                var output = document.getElementById("test-output");
+                var input = document.getElementById("test-input");
+                
+                input.addEventListener('input', (e) => {
+                    output.textContent = e.target.value;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            Output:
+            <span id="test-output">
+                Websocket test
+            </span>
+        </div>
+        <div>
+            Input: &nbsp;&nbsp;<input id="test-input" />
+        </div>
+     </body>
+</html>
