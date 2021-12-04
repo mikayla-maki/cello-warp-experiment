@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="static/src.js"></script>
+    </head>
+    <body>
+        <div>
+            Output:
+            <span id="test-output">
+                Websocket test
+            </span>
+        </div>
+        <div>
+            Input: &nbsp;&nbsp;<input id="test-input" />
+        </div>
+        <div>
+            POST:
+            <input type="text" id="post-url" value="http://localhost:3030/boards/board1"/>
+            <textarea id="post-body">{"action": "CHANGE", "payload": {"a":"b"}}</textarea>
+            <button id="post-send">send</button>
+        </div>
+
+        <div>
+            Get:
+            <input type="text" id="get-url" value="http://localhost:3030/boards/board1"/>
+            <input type="text" id="get-param" value="1638574781"/>
+            <button id="get-send">send</button>
+            <pre id="get-output"></pre>
+        </div>
+     </body>
+</html>
